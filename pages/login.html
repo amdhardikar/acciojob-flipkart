@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="../style.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <title>Login</title>
+
+   <style>
+      .navbar {
+
+         position: absolute;
+         box-shadow: none;
+         background-color: transparent;
+      }
+
+      .flipkart {
+         color: white;
+      }
+
+      .main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100vw;
+         height: 100vh;
+      }
+
+      .left {
+         width: 50%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+      .left form {
+         width: 50%;
+         height: 50%;
+         font-size: 22px;
+         padding: 20px;
+         /* border: 1px solid black; */
+      }
+      .left input {
+         all: unset;
+         border-bottom: 1.5px solid rgba(0, 0, 0, 0.384);
+         font-size: 20px;
+         padding: 10px 0px;
+         margin: 15px 0px;
+         width: 100%;
+      }
+      label {
+         font-weight: 400;
+      }
+      .form-control {
+         margin: 40px 0px;
+      }
+      .login-btn {
+         margin-top: 20px;
+         padding: 15px;
+         font-weight: 400px;
+         background-color: unset;
+         border-radius: 5px;
+         font-size: 20px;
+         text-transform: capitalize;
+         width: 100%;
+         outline: none;
+         border: 2px solid blue;
+         color: blue;
+      }
+      .login-btn:hover {
+         color: whitesmoke;
+         background-color: blue;
+      }
+      .implink {
+         margin-top: 15px;
+         color: blue;
+         font-weight: 400;
+         cursor: pointer;
+      }
+      .right {
+         width: 50%;
+         height: 100%;
+      }
+      .right img {
+         object-fit: cover;
+         height: 100%;
+         width: 100%;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <div class="navbar">
+      <div class="brand">
+         <a href="../index.html">
+            <img src="../images/flipkart.svg" class="flipkart" width="150px">
+         </a>
+      </div>
+   </div>
+
+   <div class="main">
+      <div class="left">
+         <form action="">
+            <div class="email-id form-control">
+               <label for="Email">Email</label>
+               <br>
+               <input type="email" name="Email" id="" placeholder="Enter email address">
+            </div>
+            <div class="password form-control">
+               <label for="Pwd">Password</label>
+               <br>
+               <input type="password" name="Pwd" id="" placeholder="Enter password">
+            </div>
+            <button class="login-btn">
+               Login
+            </button>
+         </form>
+         <small class="implink">
+            forgot password ?
+         </small>
+         <p class="implink">
+            <a href="./sign-up.html">
+               New to Flipkart? Create an account
+            </a>
+         </p>
+      </div>
+      <div class="right">
+         <img src="../images/login-poster.jpg" alt="" srcset="">
+      </div>
+   </div>
+
+</body>
+
+</html>
